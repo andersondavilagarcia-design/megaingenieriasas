@@ -1,12 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mega ingenieria</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEGA INGENIERÍA SAS | Soluciones Integrales de Ingeniería y Estructuras</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Archivo CSS local -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <!-- BARRA SUPERIOR DE CONTACTO -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="contact-info">
+        <a href="tel:+573000000000"><i class="fas fa-phone-alt"></i> +57 (605) 300 0000</a>
+        <a href="mailto:contacto@megaingenieriasas.com"><i class="fas fa-envelope"></i> contacto@megaingenieriasas.com</a>
+        <span><i class="fas fa-map-marker-alt"></i> Cobertura Nacional - Colombia</span>
+      </div>
+      <div class="top-bar-right">
+        <span><i class="fas fa-clock"></i> Lun - Vie: 7:30 AM - 5:30 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN (Menu Responsive CSS Puro) -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <span class="logo-mega">MEGA</span>
+        <span class="logo-ing">INGENIERÍA <small>SAS</small></span>
+      </a>
+
+      <!-- CSS Checkbox Hack para menú móvil -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#cotizacion" class="btn btn-primary btn-header">Solicitar Cotización</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO PRINCIPAL -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-award"></i> Líderes en Estructuras Metálicas e Ingeniería Civil
+        </div>
+        <h1>Soluciones de Ingeniería Industrial y Construcción Metálica</h1>
+        <p>Diseño, fabricación, montaje de estructuras pesadas, obras civiles y mantenimiento de infraestructura con los más altos estándares de calidad y seguridad industrial.</p>
+        <div class="hero-buttons">
+          <a href="#cotizacion" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> Cotizar Proyecto</a>
+          <a href="#servicios" class="btn btn-outline btn-lg"><i class="fas fa-th-list"></i> Ver Servicios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA DE ESTADÍSTICAS -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <i class="fas fa-building-circle-check"></i>
+        <h3>+150</h3>
+        <p>Proyectos Ejecutados</p>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-drafting-compass"></i>
+        <h3>100%</h3>
+        <p>Precisión en Diseño</p>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-users-gear"></i>
+        <h3>+50</h3>
+        <p>Ingenieros y Operativos</p>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-shield-halved"></i>
+        <h3>HSEQ</h3>
+        <p>Certificación de Calidad</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="about-section">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80" alt="Ingeniería y Construcción Mega Ingeniería">
+        <div class="about-badge">
+          <span>+10</span>
+          <p>Años de Experiencia en el Sector</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-tag">Sobre Nosotros</div>
+        <h2>Socio Estratégico en Construcción Mecánica e Infraestructura</h2>
+        <p class="lead-text">En <strong>MEGA INGENIERÍA SAS</strong> nos especializamos en el diseño, desarrollo y ejecución de proyectos de ingeniería civil, fabricación metálica e infraestructura industrial para los sectores de hidrocarburos, comercio e industria general.</p>
+        <p>Contamos con capacidad técnica para realizar montajes industriales, cubiertas, bodegas, sistemas de bombeo, estaciones de servicio y tuberías con rigurosos controles de calidad e ingeniería de detalle.</p>
+        
+        <ul class="features-list">
+          <li><i class="fas fa-check-circle"></i> Fabricación y montaje con normatividad AWS y AISC.</li>
+          <li><i class="fas fa-check-circle"></i> Desarrollo de obras civiles e infraestructura industrial.</li>
+          <li><i class="fas fa-check-circle"></i> Personal técnico, soldadores homologados e ingenieros expertos.</li>
+          <li><i class="fas fa-check-circle"></i> Cumplimiento estricto de cronogramas y políticas HSQE.</li>
+        </ul>
+
+        <a href="#contacto" class="btn btn-secondary">Conocer Más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="services-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">Nuestros Servicios</div>
+        <h2>Soluciones Integrales de Ingeniería</h2>
+        <p>Ofrecemos cobertura completa desde la conceptualización hasta la entrega final del proyecto.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-warehouse"></i></div>
+          <h3>Estructuras Metálicas</h3>
+          <p>Diseño, fabricación y montaje de bodegas industriales, cubiertas, mezzanine, cerramientos y estructuras pesadas de acero.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-helmet-safety"></i></div>
+          <h3>Obras Civiles e Industriales</h3>
+          <p>Cimentaciones especiales, placas de concreto, construcción de tanques de almacenamiento y obras de urbanismo industrial.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-gas-pump"></i></div>
+          <h3>Estaciones de Servicio (EDS)</h3>
+          <p>Instalación de dispensadores, válvulas, bombas, tanques y adecuaciones especializadas para estaciones de combustible.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-oil-well"></i></div>
+          <h3>Tuberías e Hidrocarburos</h3>
+          <p>Fabricación de líneas de flujo, manifolds, instalación de canales de drenaje, bajantes y sistemas piping industrial.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-stairs"></i></div>
+          <h3>Carpintería Metálica y Mallas</h3>
+          <p>Fabricación y ensamblaje de escaleras industriales, pasarelas, mallas de protección, cerramientos y escalinatas de seguridad.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-wrench"></i></div>
+          <h3>Mantenimiento Industrial</h3>
+          <p>Mantenimiento preventivo y correctivo de estructuras, pintura industrial epóxica y rehabilitación de bodegas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA DE PROYECTOS -->
+  <section id="proyectos" class="projects-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">Portafolio</div>
+        <h2>Proyectos Destacados</h2>
+        <p>Ejecución precisa para clientes líderes en la industria nacional.</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" alt="Estructuras Industriales Cartagena">
+          <div class="project-info">
+            <span class="project-category">Sector Industrial</span>
+            <h3>Bodega y Almacenamiento</h3>
+            <p><i class="fas fa-location-dot"></i> Cartagena, Colombia</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=800&q=80" alt="Instalaciones en Estaciones de Servicio">
+          <div class="project-info">
+            <span class="project-category">Estaciones de Servicio</span>
+            <h3>Montaje de Dispensadores y Equipos</h3>
+            <p><i class="fas fa-location-dot"></i> EDS La Milagrosa y La Unión</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Canales de Drenaje Promigas">
+          <div class="project-info">
+            <span class="project-category">Infraestructura</span>
+            <h3>Canales de Drenaje y Bajantes</h3>
+            <p><i class="fas fa-location-dot"></i> Instalaciones Promigas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER DE COTIZACIÓN -->
+  <section id="cotizacion" class="cta-section">
+    <div class="container cta-container">
+      <div class="cta-content">
+        <h2>¿Tienes un proyecto de ingeniería o construcción metálica?</h2>
+        <p>Envíanos tus planos o requerimientos y nuestro equipo técnico te brindará una cotización detallada sin compromiso.</p>
+      </div>
+      <div class="cta-action">
+        <a href="#modal-cotizacion" class="btn btn-primary btn-lg"><i class="fas fa-calculator"></i> Solicitar Cotización</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-text">
+          <div class="section-tag">Contacto Directo</div>
+          <h2>Ponte en contacto con nuestro equipo de ingenieros</h2>
+          <p>Estamos listos para asesorarte en la planificación, presupuesto y ejecución de tu obra civil o metálica.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <h4>Ubicación</h4>
+                <p>Atlántico / Cobertura en toda Colombia</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Línea Telefónica</h4>
+                <p>+57 (605) 300 0000 / +57 300 123 4567</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Correo Electrónico</h4>
+                <p>contacto@megaingenieriasas.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <h3>Envíanos un mensaje</h3>
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo *</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de su empresa">
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 3001234567">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" required placeholder="correo@empresa.com">
+            </div>
+
+            <div class="form-group">
+              <label for="servicio">Servicio de Interés</label>
+              <select id="servicio" name="servicio">
+                <option value="estructuras">Estructuras Metálicas</option>
+                <option value="obras_civiles">Obras Civiles</option>
+                <option value="eds">Estaciones de Servicio (EDS)</option>
+                <option value="mantenimiento">Mantenimiento y Reparaciones</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Detalles del Proyecto *</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escriba brevemente el alcance de su requerimiento..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA (FOOTER) -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <a href="#" class="logo footer-logo">
+          <span class="logo-mega">MEGA</span>
+          <span class="logo-ing">INGENIERÍA <small>SAS</small></span>
+        </a>
+        <p>Especialistas en estructuras metálicas, construcciones industriales y proyectos integrales de ingeniería civil a nivel nacional.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Estructuras Metálicas</a></li>
+          <li><a href="#servicios">Obras Civiles</a></li>
+          <li><a href="#servicios">Mantenimiento de EDS</a></li>
+          <li><a href="#servicios">Tuberías Industriales</a></li>
+          <li><a href="#servicios">Escaleras y Cerramientos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#cotizacion">Solicitar Presupuesto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Oficina Central</h4>
+        <p><i class="fas fa-building"></i> MEGA INGENIERÍA SAS</p>
+        <p><i class="fas fa-location-dot"></i> Atlántico, Colombia</p>
+        <p><i class="fas fa-phone"></i> +57 (605) 300 0000</p>
+        <p><i class="fas fa-envelope"></i> contacto@megaingenieriasas.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 MEGA INGENIERÍA SAS. Todos los derechos reservados.</p>
+        <p>Diseño Web Corporativo de Alta Eficiencia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE COTIZACIÓN (ACTIVADO POR CSS :target) -->
+  <div id="modal-cotizacion" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#" class="modal-close">&times;</a>
+      <h3>Solicitud de Cotización Rápida</h3>
+      <p>Complete sus datos y un especialista técnico se pondrá en contacto inmediatamente.</p>
+      
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="modal-nombre">Nombre *</label>
+          <input type="text" id="modal-nombre" required placeholder="Su nombre">
+        </div>
+        <div class="form-group">
+          <label for="modal-telefono">Teléfono / WhatsApp *</label>
+          <input type="tel" id="modal-telefono" required placeholder="Número de contacto">
+        </div>
+        <div class="form-group">
+          <label for="modal-email">Correo Electrónico *</label>
+          <input type="email" id="modal-email" required placeholder="correo@empresa.com">
+        </div>
+        <div class="form-group">
+          <label for="modal-detalles">Descripción breve del trabajo *</label>
+          <textarea id="modal-detalles" rows="3" required placeholder="Ej. Cotización para estructura metálica de 500m2..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Solicitar Presupuesto</button>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
